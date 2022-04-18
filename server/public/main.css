@@ -5,11 +5,15 @@
 }
 
 body {
-  background-color: #8d591a77;
+  background-color: #37924977;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
 
 .main div {
   margin: 0px 10px 0px 10px;
+}
+
+img {
+  max-height: 550px;
 }
