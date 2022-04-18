@@ -1,6 +1,11 @@
 import React from 'react'
 
 function Nav() {
+
+  //  function handleClick(evt) {
+  //   setPage(evt.target.name)
+  //  }
+  
   return (
     <div>
       <h2>Menu</h2>

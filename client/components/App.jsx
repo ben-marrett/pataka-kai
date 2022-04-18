@@ -6,12 +6,7 @@ import Home from './Home'
 
 const App = () => {
 
-  const [page, setPage] = useState('Home')
-
-
-  function handleClick(evt) {
-    setPage(evt.target.name)
-  }
+  // const [page, setPage] = useState('Home')
 
   return (
     <>
