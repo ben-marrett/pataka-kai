@@ -1,0 +1,15 @@
+.main,
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #8d591a77;
+  color: #0a1520;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main div {
+  margin: 0px 10px 0px 10px;
+}
