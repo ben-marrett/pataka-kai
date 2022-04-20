@@ -6,7 +6,7 @@ import Home from './Home'
 
 const App = () => {
 
-  // const [page, setPage] = useState('Home')
+  const [currentPage, setCurrentPage] = useState('Home')
 
   return (
     <>
@@ -15,7 +15,7 @@ const App = () => {
       </div>
 
       <div className="main">
-        <Nav />
+        <Nav page={currentPage} alter={setCurrentPage}/>
         <Home />
         <img src="images/construction.jpg"></img>
       </div>

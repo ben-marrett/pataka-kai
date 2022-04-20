@@ -1,26 +1,26 @@
 import React from 'react'
 
-function Nav() {
+function Nav(current, setPage) {
 
-  //  function handleClick(evt) {
-  //   setPage(evt.target.name)
-  //  }
+   function handleClick(evt) {
+    setPage(evt.target.name)
+   }
   
   return (
     <div>
       <h2>Menu</h2>
       <ul>
-        <li><button name="home">Home</button></li>
+        <li><button onClick={handleClick} name="Home">Home</button></li>
         <br></br>
-        <li><button name="currentlyAvailable">Kai Available</button></li>
+        <li><button onClick={handleClick} name="CurrentlyAvailable">Kai Available</button></li>
         <br></br>
-        <li><button name="allKai">See All</button></li>
+        <li><button onClick={handleClick} name="AllKai">See All</button></li>
         <br></br>
-        <li><button name="addKai">Add Kai</button></li>
+        <li><button onClick={handleClick} name="KaiEntry">Add Kai</button></li>
         <br></br>
-        <li><button name="requestKai">Request</button></li>
+        <li><button onClick={handleClick} name="RequestKai">Request</button></li>
         <br></br>
-        <li><button name="users">Meet Growers</button></li>
+        <li><button onClick={handleClick} name="MemberProfiles">Meet Growers</button></li>
         
       </ul>
     </div>
