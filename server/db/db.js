@@ -2,7 +2,7 @@ const config = require('./knexfile').development
 
 const connection = require('knex')(config)
 
-function getKai(db = connection) {
+function getAllKai(db = connection) {
   return db('Kai')
     .select()
     .then((kai) => {
@@ -20,4 +20,21 @@ function getKai(db = connection) {
     })
 }
 
-module.exports = { getKai }
+function getKaiItem(id, db = connection) {
+  return db('Kai')
+    .where('id', id)
+    .then((kai) => {
+      const item = kai[0]
+      return {
+        id: item.id,
+        kaiName: item.kaiName,
+        grownBy: item.grownBy,
+        location: item.location,
+        expiry: item.expiry,
+        amount: item.amount,
+        availableNow: item.availableNow,
+      }
+    })
+}
+
+module.exports = { getAllKai, getKaiItem }
