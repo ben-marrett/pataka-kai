@@ -1,5 +1,5 @@
 import request from 'superagent'
 
-export function getGreeting() {
-  return request.get('/greeting').then((res) => res.body.greeting)
+export function getKaiList() {
+  return request.get('/kai/allKai').then((res) => res.body)
 }
