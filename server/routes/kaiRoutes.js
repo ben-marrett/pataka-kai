@@ -27,4 +27,19 @@ router.get('/allKai/:id', (req, res) => {
     })
 })
 
+router.post('/allKai', (req, res) => {
+  const newKaiData = req.body
+  db.addKai(newKaiData)
+    .then((id) => {
+      const newKai = id[0]
+      return db.getKaiItem(newKai)
+    })
+    .then((newJson) => {
+      res.json(newJson)
+    })
+    .catch((err) => {
+      res.status(500).send(err.message)
+    })
+})
+
 module.exports = router

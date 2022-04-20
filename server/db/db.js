@@ -37,4 +37,16 @@ function getKaiItem(id, db = connection) {
     })
 }
 
-module.exports = { getAllKai, getKaiItem }
+function addKai(kai, db = connection) {
+  const newKai = {
+    kaiName: kai.kaiName,
+    grownBy: kai.grownBy,
+    location: kai.location,
+    expiry: kai.expiry,
+    amount: kai.amount,
+    availableNow: kai.availableNow,
+  }
+  return db('Kai').insert(newKai)
+}
+
+module.exports = { getAllKai, getKaiItem, addKai }
