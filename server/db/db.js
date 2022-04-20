@@ -10,7 +10,7 @@ function getKai(db = connection) {
         return {
           id: kai.id,
           kaiName: kai.kaiName,
-          grownBy: kai.grownby,
+          grownBy: kai.grownBy,
           location: kai.location,
           expiry: kai.expiry,
           amount: kai.amount,
