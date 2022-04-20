@@ -13,6 +13,8 @@ function getKai(db = connection) {
           grownBy: kai.grownby,
           location: kai.location,
           expiry: kai.expiry,
+          amount: kai.amount,
+          availableNow: kai.availableNow,
         }
       })
     })
