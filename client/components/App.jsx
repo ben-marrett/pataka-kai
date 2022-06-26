@@ -9,7 +9,6 @@ import AllKai from './AllKai'
 import LogInNav from './LogInNav'
 
 
-
 const App = () => {
 
   const [currentPage, setCurrentPage] = useState('Home')
@@ -25,12 +24,9 @@ const App = () => {
         <Router>
           <Nav page={currentPage} alter={setCurrentPage} />
           <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/allKai" element={<AllKai props={kai} />} />
-        </Routes>
-        {/* <Home  /> */}
-        {/* <AllKai props={kai} /> */}
-          <LogInNav />
+            <Route path="/" element={<Home />} />
+            <Route path="/allKai" element={<AllKai props={kai} />} />
+          </Routes>
         </Router>
       </div>
     </>
