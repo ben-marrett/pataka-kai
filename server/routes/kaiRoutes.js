@@ -4,8 +4,6 @@ const db = require('../db/db')
 
 const router = express.Router()
 
-//routes
-
 router.get('/allKai', (req, res) => {
   db.getAllKai()
     .then((kai) => {

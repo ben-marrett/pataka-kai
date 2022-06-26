@@ -51,7 +51,6 @@ function LogInNav() {
           </a>
         </IfNotAuthenticated>
       </NavGroup>
-      <h1>Test</h1>
     </>
   )
 }

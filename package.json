@@ -42,11 +42,15 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@vscode/sqlite3": "^5.0.8",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "framer-motion": "^6.3.3",
     "knex": "^1.0.7",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "supertest": "^6.2.3"
   },
   "devDependencies": {
     "@babel/core": "7.13.1",
