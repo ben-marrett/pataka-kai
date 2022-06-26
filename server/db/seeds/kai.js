@@ -9,7 +9,7 @@ exports.seed = async function (knex) {
     {
       id: 1,
       kaiName: 'Pumpkin',
-      grownBy: 'Ben Marrett',
+      grownBy: 'Ben J',
       location: 'Monty ave, Dargaville',
       expiry: 'October 2022',
       amount: '2',
@@ -18,8 +18,8 @@ exports.seed = async function (knex) {
     {
       id: 2,
       kaiName: 'Cabbage',
-      grownBy: 'Jacqui Hart',
-      location: 'Dunn Road, Ruawai',
+      grownBy: 'Jacques Hart',
+      location: 'Doop Road, Ruawai',
       expiry: '30 April 2022',
       amount: '12',
       availableNow: true,
@@ -36,7 +36,7 @@ exports.seed = async function (knex) {
     {
       id: 4,
       kaiName: 'Onion',
-      grownBy: 'Api',
+      grownBy: 'Ani',
       location: 'Te Maire',
       expiry: 'August 2022',
       amount: '50',

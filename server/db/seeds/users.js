@@ -8,14 +8,14 @@ exports.seed = async function (knex) {
   await knex('users').insert([
     {
       id: 1,
-      fullName: 'Ben Marrett',
-      location: 'Dargaville',
-      contact: 'benteikoatgmail.com',
+      fullName: 'Ben Morrin',
+      location: 'Dargavillion',
+      contact: 'benatgmail.com',
     },
     {
       id: 2,
-      fullName: 'Jacqui Hart',
-      location: 'Dunn Road, Ruawai',
+      fullName: 'Jacques Hart',
+      location: 'Doop Road, Ruawai',
       contact: 'call 572140',
     },
     {
@@ -26,13 +26,13 @@ exports.seed = async function (knex) {
     },
     {
       id: 4,
-      fullName: 'Tobi Hart',
+      fullName: 'Tobi Hertz',
       location: 'Dargaville',
       contact: 'thartatgmail.com',
     },
     {
       id: 5,
-      fullName: 'Doug Phillips',
+      fullName: 'Doug Jacobson',
       location: 'Dargaville',
       contact: 'call 575575',
     },
