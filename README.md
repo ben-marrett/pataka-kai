@@ -8,4 +8,3 @@ After receiving some feedback, it sounds like another option might be to open it
 items could be made available, whether a tin of beans in the pantry or some fresh baked bread.
 
 To be continued....
-
