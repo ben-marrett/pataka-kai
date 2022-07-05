@@ -1,7 +1,14 @@
-.main,
-.title {
+.main {
   display: flex;
   flex-direction: row;
+}
+
+.title {
+  text-align: center;
+}
+
+.home {
+  padding-left: 50px;
 }
 
 body {
